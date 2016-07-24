@@ -1,6 +1,6 @@
 {
   "name": "array-add-item",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add item to array",
   "main": "index.js",
   "scripts": {
