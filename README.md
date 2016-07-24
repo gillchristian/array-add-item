@@ -27,7 +27,7 @@ console.log(abcde) // ['a', 'b', 'c', 'd', 'e']
 
 - `addItemInArray` is a pure function, it does not mutate the provided array.
 - item is added at the end if no position is provided or it is out of the range of the array (grater than `arr.length` or less than 0).
-- returns the array if the position provided is not a number.
+- returns the array if the position provided is not a number or is a float number.
 
 ### FAQ
 
