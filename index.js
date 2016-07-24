@@ -10,7 +10,7 @@
  * @returns {Array}  modified array
  */
 function addItemInArray(arr, itemToAdd, index = -1) {
-  if (typeof index !== 'number') {
+  if (typeof index !== 'number' || index % 1 !== 0) {
     return arr
   }
   const inRange = index > -1 && index <= arr.length

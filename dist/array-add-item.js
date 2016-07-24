@@ -16,7 +16,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 function addItemInArray(arr, itemToAdd) {
   var index = arguments.length <= 2 || arguments[2] === undefined ? -1 : arguments[2];
 
-  if (typeof index !== 'number') {
+  if (typeof index !== 'number' || index % 1 !== 0) {
     return arr;
   }
   var inRange = index > -1 && index <= arr.length;

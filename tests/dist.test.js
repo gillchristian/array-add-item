@@ -34,9 +34,13 @@ test('adds an item at the end of the array', t => {
   t.deepEqual(actual, expected)
 })
 
-test('returns the original array when index typeof !== "number"', t => {
+test(`returns the original array when index typeof !== "number"
+      or it is a float number`, t => {
   const expected = arr
-  const actual = addItemInArray(arr, 'b', 'a')
+  let actual = addItemInArray(arr, 'b', 'a')
+  t.deepEqual(actual, expected)
+
+  actual = addItemInArray(arr, 'b', 1.23)
   t.deepEqual(actual, expected)
 })
 
