@@ -21,8 +21,6 @@ const abcde = addItemInArray(['a', 'c', 'd', 'e'], 'b', 1)
 console.log(abcde) // ['a', 'b', 'c', 'd', 'e']
 ```
 
-*NOTE*: it requires the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) to work. If you are not transpiling your code with Babel's `es2015` preset (to work on the browser) or are using a node version older than 5, you will have to use the compiled version: `require(array-add-item/dist/array-add-item.js)`.
-
 ### behavior
 
 - `addItemInArray` is a pure function, it does not mutate the provided array.
