@@ -2,7 +2,7 @@
   "name": "array-add-item",
   "version": "0.1.1",
   "description": "Add item to array",
-  "main": "index.js",
+  "main": "dist/array-add-item.js",
   "scripts": {
     "test": "npm run lint && ava -v 'tests/**/*.test.js'",
     "ava:watch": "ava -v -w 'tests/**/*.test.js'",
